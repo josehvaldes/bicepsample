@@ -7,3 +7,7 @@ param location string = resourceGroup().location
   'prod'
 ])
 param environmentType string
+
+module storate 'Modules/storage.bicep' = {
+  name: 'mydemostorage'
+}
